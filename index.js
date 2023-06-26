@@ -1,6 +1,7 @@
 import { Configuration, OpenAIApi } from "openai";
 import { config } from 'dotenv';
 config();
+import { get_completion } from "./helper/chatComplete3-5-turbo";
 
 const configuration = new Configuration({
     organization: "org-owR7h7j93sgLxZWl7VoWsNAD",
@@ -8,5 +9,6 @@ const configuration = new Configuration({
 })
 
 const openai = new OpenAIApi(configuration);
-const response = await openai.listModels();
-console.log(response.data);
+// const response = await openai.listModels();
+// console.log(response.data);
+
